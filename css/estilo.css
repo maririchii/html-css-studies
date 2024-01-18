@@ -1,0 +1,417 @@
+body{
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;;
+    color: #666;
+    line-height: 1.7;
+}
+
+a{
+    transition: color 0.2s linear, border 0.2s linear;
+    text-decoration: none;
+    border-bottom: 1px dotted; /* O sublinhado na verdade é uma borda. Pega a cor da fonte */
+    color: #49BF9D; /* Para o link do Elements - Text */
+}
+
+a:hover{
+    /* Quando passa o mouse por cima, a borda some */
+    border-bottom-color: transparent;
+}
+
+img{
+    max-width: 100%; /* Ajusta até a largura máxima da própria imagem */
+}
+
+.img-right{
+    float: right;
+    border-radius: 10px;
+    margin-left: 2em;
+}
+
+.img-left{
+    float: left;
+    border-radius: 10px;
+    margin-right: 2em;
+}
+
+.recent-works-card-title{
+    margin-top: 20px; /* Para distaciar do card */
+    margin-bottom: 0;/* Para diminuir a distância entre o título e texto */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.recent-works-card-title + p{
+    /* Todo parágrafo após o recent-works-card-title */
+    margin-top: 0; /* Mesma ideia do margin-bottom anterior */
+    margin-bottom: 40px;
+}
+
+.recent-works-card img{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden; /* O conteúdo que excede ao tamanho do elemento é escondido (talvez em outro browser dê problema)
+                      Nesse caso, seria pra esconder parte da imagem que pudesse ficar para fora da borda arredondada. */
+}
+
+.main-header-link img{
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.image-link{
+    border: 0; /* Para tirar a borda que ficava embaixo das imagens (que ficam dentro de uma tag <a>) */
+}
+
+p{
+    margin: 0 0 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #787878;
+    font-weight: normal;
+    margin: 1em 0; /* A margem está variando de acordo com o tamanho da fonte (unidade: em) */
+}
+
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 15px;
+}
+
+sub, sup{
+    font-size: 12px;
+}
+
+blockquote{
+    border-left: 5px solid #EFEFEF;
+    margin: 2em 0;
+    padding: 0.5em 0 0.5em 1.5em;
+}
+
+blockquote p{
+    margin-bottom: 0; /* Para tirar o espaço que fica sobrando em baixo */
+}
+
+code{
+    background-color: #F7F7F7;
+    border-radius: 0.35em;
+    border: 2px solid #EFEFEF;
+    font-size: 0.9em;
+    padding: 0.25em 0.65em;
+    font-family: "Courier new", monospace;
+    color: #929292
+    /* Não pode fazer 'display: block' para que fique o código dentro do bloquinho. Irá afetar o code do Elements */
+}
+
+pre code{
+    display: block;
+}
+
+ul, ol{ 
+    margin: 0; /* Toda ul e ol já vem com um padding e margin pré-definidos */
+    padding: 0;
+    padding-left: 1.2em;
+    /* list-style-position: inside; -> Para alinhar os marcadores com o restante do texto (mas na ol, o texto fica grudado no número, tem um espacinho) */
+}
+
+li{
+    padding-left: 0.5em;
+}
+
+.ul-alternate{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ul-alternate li{
+    border-bottom: 2px solid #b4b3b3;
+    padding-left: 0;
+}
+
+.ul-alternate li:last-child{ /* Pega o último item da lista */
+    border: 0;
+}
+
+.hidden{
+    /* O texto da span dos icons não vai ser visível na tela, mas continua acessível para o leitor de tela */
+    display: block; /* span é elemento de linha, para aplicar width e height precisa ser de bloco */
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.ul-icons{
+    list-style-type: none;
+    padding-left: 0;
+    color: #49BF9D;
+}
+
+.ul-icons li{
+    display: inline-block; /* Para não ficarem um embaixo do outro (blocos) -> mas manter características de bloco */
+    font-size: 1em;
+}
+
+input, label, textarea, select{ /* Deve transformá-los em elemento de bloco */
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box; /* Por padrão, tem um padding que soma com o width */
+}
+
+input, textarea, select{
+    background-color: #ebebeb;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px solid transparent;
+    margin-bottom: 15px; /* Para espaçar os dois inputs do textarea */
+}
+
+select{
+    padding: 10px;
+    margin-top: 15px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: auto; /* Vai voltar para o width que era antes (padrão), não considerando o 100% de todo input */
+}
+
+textarea{
+    height: 10em;
+    resize: none;
+}
+
+input:focus, textarea:focus, select:focus{ /* Formatar o espaço dos inputs quando estiver com o foco do mouse */
+    border: 3px solid #4ec8a5;
+    outline: none; /* Tira a borda preta padrão do browser */
+}
+
+.button-default{
+    background-color: #49BF9D;
+    border: 3px solid #49BF9D;
+    color: white;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    display: inline-block; /* Button é de linha, mas para usar essas propriedades do box model precisa ser de bloco */
+    width: auto; /* Para que o botão do primeiro formulário volte ao tamanho orignal, sem considerar o width: 100% de antes */
+    transition: all 0.4s ease-in; /* Qualquer propriedade que mudar no hover */
+    cursor: pointer; /* Para ficar a mãozinha de clicável */
+}
+
+.button-default:hover{
+    background-color: #4ec8a5;
+    border-color: transparent;
+}
+
+.button-default-stroke{
+    background-color: white;
+    border-color: #EFEFEF; 
+    color: inherit; 
+}
+
+.button-default-stroke:hover{
+    border-color: #49BF9D;
+    color: #49BF9D;
+    background-color: white;
+}
+
+.button-default-small{
+    font-size: 0.6em;
+}
+
+.button-default-full{
+    display: block; /* Button é um elemento de linha -> para ocupar 100% da largura (da coluna) precisa ser de bloco */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table{
+    width: 100%;
+    margin: 0 0 2em 0;
+    border-collapse: collapse;
+}
+
+.table th{
+    text-align: left;
+    padding: 0.75em; /* Para alinhar com as células */
+}
+
+.table td{
+    padding: 0.75em;
+}
+
+.table tbody tr{
+    border-bottom: 1px solid #bdbdbd
+}
+
+.table tbody tr:first-child td{ /* Pega a primeira linha e os td que estão lá dentro */
+    border-top: 2px solid #b0b0b0;
+}
+
+.table tbody tr:last-child td{ 
+    border-bottom: 2px solid #b0b0b0;
+}
+
+.table tbody tr:nth-child(odd) td{
+    /* Pega todas as td (colunas) das linha ímpares, ou seja, pega todas as linhas ímpares completas */
+    background-color: #e6e6e6;
+}
+
+.table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{
+    border: 1px solid #cdcdcd; /* Não precisa da borda mais grossa no primeiro e último */
+}
+
+.main-header{
+    position: fixed;
+    top: 0; /* Fica fixa no canto superior esquerdo */
+    left: 0;
+    height: 100%;
+    width: 35%; /* Ocupa apenas parte da largura da tela */
+    padding: 124px 54px 72px;
+    box-sizing: border-box;
+    background-image: URL(../imagens/overlay.png), URL(../imagens/bg.jpg);
+    background-position: left top;
+    background-size: auto, cover;
+    text-align: right;
+}
+
+.main-header-title{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main-header-title strong{
+    color: white;
+    font-weight: normal;
+}
+
+.main-header-link{
+    color: inherit; /* Herda a cor do elemento pai (main-header-tittle) -> Facilita manutenção */
+}
+
+.main-header-link:hover{
+    color: #49BF9D;
+}
+
+.main-content{
+    width: 65%; /* Se o header ocupou 35%, o main ocupa isso */
+    margin-left: 35%; /* Para ficar exatamente no canto direito */
+    padding: 124px 54px 72px;
+    box-sizing: border-box; /* O padding não deve somar no width e height */
+}
+
+.gallery-img img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.gallery-thumb img{
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 2%; /* Relativo à largura do elemento pai */
+}
+
+.main-footer{
+    position: fixed; 
+    bottom: 0; /* Quem vai dar a distância é o padding e o top */
+    left: 0; /* Fica fixo no canto esquerdo inferior do browser */
+    top: 70%;
+    width: 35%; /* Mesma do header */
+    padding: 0 54px 72px 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.main-footer a{
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+
+.main-footer a:hover{
+    color: #49BF9D;
+}
+
+.main-footer .ul-icons a{
+    font-size: 22px;
+    border-bottom: none; /* Para tirar a borda quando clica nos icons */
+}
+
+.main-footer .ul-icons li{
+    padding-left: 20px; /* Para distanciar um icon do outro */
+}
+
+.copyright{
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.copyright li{
+    display: inline-block; /* Para considerar o dois itens na segunda linha na mesma linha */
+    font-size: 0.8em;
+}
+
+/* GRID */
+.row{
+    overflow: auto; /* Para enxergar a altura das colunas (o título Action sobe se não fizer isso) */ 
+}
+
+.col-2{
+    width: 48.5%;
+    float: left; /* right fica na ordem inversa das colunas */
+}
+
+.col-2:first-child{
+    margin-right: 1.5%; /* Para dar o espaço entre name e email em 'Get in Touch' */
+}
+
+.col-2:last-child{
+    margin-left: 1.5%;
+}
+
+.col-2-3{
+    width: 66%;
+    float: left;
+}
+
+.col-1-3{
+    width: 32%; /* 3 x 32 = 96 -> 4% de espaço para a margem */
+    float: left;
+}
+
+.col-1-3:nth-child(3n - 2){ /* 1, 4, 7 */
+    margin-right: 2%; /* Para a gallery row */
+}
+
+.col-1-3:nth-child(3n){ /* 3, 6, 9 */
+    margin-left: 2%; 
+}
+
+.col-2-3 + .col-1-3{ 
+    /* Vai selecionar o elemento col-1-3 que vem imediatamente depois do .col-2-3 */
+    /* No grid do 'Get in Touch' a segunda coluna com o address está na posição 2, então, não encaixa nas duas regras anteriores */
+    margin-left: 2%;
+}
+
+.col-1-3 + .col-2-3{
+    /* Precaução de um possível layout novo (1 coluna | 2 colunas) */
+    margin-left: 2%;
+}

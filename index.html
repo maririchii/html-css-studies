@@ -1,0 +1,548 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Projeto Strata</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Maria Eduarda">
+        <meta name="description" content="descrição legal">
+        <meta name="keywords" content="html5, tecnologia">
+
+        <!-- Código que limpa a diferença de formatação entre os browsers, todos serão iguais -->
+        <!-- Coloca ele primeiro para que qualquer alteração específica sobrescreva-o -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/estilo.css" rel="stylesheet">
+        <link href="Font-awesome/fontawesome-free-6.4.0-web/css/all.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        
+        <header class="main-header">
+
+            <!-- Não é o contrário porque a tag img não permite conteúdo dentro dela -->
+            <a href="index.html" class="main-header-link image-link">
+                <img src="imagens/avatar.jpg" alt="Man facing backwards">
+            </a>
+
+            <h1 class="main-header-title">Trabalhos e groselhas de 
+                <br><strong>Daniel Vieira Morais</strong>, 
+                <br>um zé ninguém qualquer
+            </h1>
+
+            <p>Retirado de <a href="http://html5up.net" target="_blank" class="main-header-link">html5up.net</a>.</p>
+
+        </header>
+
+        <main class="main-content">
+
+            <section class="main-content-section">
+                <h2>Quando o header é aside e o aside é no header</h2>
+                
+                <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis 
+                    ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing 
+                    in curae lobortis tortor primis integer massa adipiscing id nisi 
+                    accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. 
+                    Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem 
+                    neque cubilia.
+                </p>
+                
+                <a href="#" title="Learn more" class="button-default button-default-stroke">Learn more</a>
+
+            </section>
+
+            <section class="main-content-section">
+                <h3>Recent Works</h3>
+
+                <div class="row">
+                    <div class="col-2">
+                        <article class="recent-works-card">
+                            <a href="imagens/fulls/01.jpg" class="image-link">
+                                <img src="imagens/thumbs/01.jpg" alt="Car on a quiet street">
+                            </a>
+                            <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+        
+                        <article class="recent-works-card">
+                            <a href="imagens/fulls/02.jpg" class="image-link">
+                                <img src="imagens/thumbs/02.jpg" alt="Forest and sun">
+                            </a>
+                            <p class="recent-works-card-title">Ultricies lacinia interdum</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+        
+                        <article class="recent-works-card">
+                            <a href="imagens/fulls/03.jpg" class="image-link">
+                                <img src="imagens/thumbs/03.jpg" alt="Library with a lot of books">
+                            </a>
+                            <p class="recent-works-card-title">Tortor metus commodo</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-2">
+                        <article class="recent-works-card">
+                            <a href="imagens/fulls/04.jpg" class="image-link">
+                                <img src="imagens/thumbs/04.jpg" alt="Someone going up the stairs">
+                            </a>
+                            <p class="recent-works-card-title">Quam neque phasellus</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+        
+                        <article class="recent-works-card">
+                            <a href="imagens/fulls/05.jpg" class="image-link">
+                                <img src="imagens/thumbs/05.jpg" alt="Mountain">
+                            </a>
+                            <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+        
+                        <article class="recent-works-card">
+                            <a href="imagens/fulls/06.jpg" class="image-link">
+                                <img src="imagens/thumbs/06.jpg" alt="House in the middle of the forest">
+                            </a>
+                            <p class="recent-works-card-title">Risus ornare lacinia</p>
+                            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <a href="#" title="Full portfolio" class="button-default">Full Portfolio</a>
+
+            </section>
+
+            <section class="main-content-section">
+                <h3>Get in Touch</h3>
+
+                <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. 
+                    Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem 
+                    neque lorem ipsum dolor.
+                </p>
+
+                <div class="row"> <!-- Divide a linha em 3 colunas: uma ocupa 2/3 e outra 1/3 -->
+                    <div class="col-2-3">
+                        <form action="#" method="POST">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="txtName">Name</label>
+                                    <input type="text" name="name" id="txtName" placeholder="Full name">
+                                </div>
+
+                                <div class="col-2">
+                                    <label for="txtEmail">Email</label>
+                                    <input type="email" name="email" id="txtEmail">
+                                </div>
+                            </div>
+
+                            <label for="txtMessage">Message</label>
+                            <textarea name="message" id="txtMessage" placeholder="Enter your message"></textarea>
+        
+                            <input type="submit" value="Send Message" class="button-default button-default-stroke">
+        
+                        </form>
+                    </div>
+
+                    <div class="col-1-3">
+                        <address>
+                    
+                            <p>
+                                <span>Address:</span>
+                                1234 Somewhere Rd. Nashville, TN 00000 United States
+                            </p>
+        
+                            <p>
+                                <span>Telephone:</span>
+                                000-000-000
+                            </p>
+        
+                            <p>
+                                <span>Email:</span>
+                                email@server.com
+                            </p>
+        
+                        </address>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-content-section">
+                <h3>Elements</h3>
+
+                <h4>Text</h4>
+
+                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>. 
+                    This is <sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <u>underlined</u> 
+                    and this is code: <code>for (;;) { ... }</code>. Finally, this is <a href="#" target="_blank">a link</a>.
+                </p>
+
+                <hr>
+
+                <h4>Heading with a Subtitle</h4>
+                <h5>Lorem ipsum dolor ist amet nullam id egestas urna aliquam</h5>
+                <p>Non facilis veritatis aut facilis quae eos doloremque perspiciatis est galisum odio ut voluptates beatae 
+                    non molestias quia. Id omnis tempore et mollitia recusandae ab facilis debitis ad neque eveniet in 
+                    deleniti sunt non corrupti veritatis
+                </p>
+
+                <h5>Heading with a Subtitle</h5>
+                <h6>Lorem ipsum dolor ist amet nullam id egestas urna aliquam</h6>
+                <p>Non facilis veritatis aut facilis quae eos doloremque perspiciatis est galisum odio ut voluptates beatae 
+                    non molestias quia. Id omnis tempore et mollitia recusandae ab facilis debitis ad neque eveniet in 
+                    deleniti sunt non corrupti veritatis
+                </p>
+
+                <hr>
+
+                <h1>Heading Level 1</h1>
+                <h2>Heading Level 2</h2>
+                <h3>Heading Level 3</h3>
+                <h4>Heading Level 4</h4>
+                <h5>Heading Level 5</h5>
+                <h6>Heading Level 6</h6>
+
+                <hr>
+
+                <h5>Blockquote</h5>
+                <blockquote cite="https://developer.mozilla.org/pt-BR/">
+                    <p>Ut omnis enim aut harum tempore ut vero quia. 
+                        Aut commodi nostrum et placeat quisquam At voluptates odit qui tempore 
+                        magnam non labore aliquid.
+                    </p>
+                </blockquote>
+
+                <!-- <q cite="https://developer.mozilla.org/pt-BR/">Ut omnis enim aut harum tempore ut vero quia. 
+                    Aut commodi nostrum et placeat quisquam At voluptates odit qui tempore 
+                    magnam non labore aliquid.</q> -->
+
+                <h5>Prefomatted</h5>
+                <!-- Dentro da tag <pre> é necessário tirar a tabulação de "boa prática" do HTML para que na página fique correto -->
+                <pre><code>
+    i = 0;
+
+    while (!deck.isInOrder()) {
+        print 'Iteration' + i;
+        deck.shuffle();
+        i++;
+    }
+
+    print 'It took ' + i + ' iterations to sort the deck.';
+            </code></pre>
+
+                <h4>Lists</h4>
+
+                <!-- Uma linha que se divide em 2 colunas -->
+                <div class="row">
+                    <div class="col-2 ">
+                        <h5>Unordered</h5>
+                        
+                        <ul>
+                            <li>Dolor pulvinar etiam magna etiam.</li>
+                            <li>Sagittis adipiscing lorem eleifend.</li>
+                            <li>Felis enim feugiat dolore viverra.</li>
+                        </ul>
+
+                        <h5>Ordered</h5>
+
+                        <ol>
+                            <li>Dolor pulvinar etiam magna etiam.</li>
+                            <li>Sagittis adipiscing lorem eleifend.</li>
+                            <li>Felis enim feugiat dolore viverra.</li>
+                            <li>Dolor pulvinar etiam magna etiam.</li>
+                            <li>Sagittis adipiscing lorem eleifend.</li>
+                            <li>Felis enim feugiat dolore viverra.</li>
+                        </ol>
+                    </div>
+
+                    <div class="col-2">
+                        <h5>Alternate</h5>
+                        <ul class="ul-alternate">
+                            <li>Dolor pulvinar etiam magna etiam.</li>
+                            <li>Sagittis adipiscing lorem eleifend.</li>
+                            <li>Felis enim feugiat dolore viverra.</li>
+                        </ul>
+        
+                        <h5>Icons</h5>
+                        <ul class="ul-icons">
+                            <li><span class="hidden">Twiiter</span><i class="fa-brands fa-twitter"></i></li>
+                            <li><span class="hidden">Facebook</span><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><span class="hidden">Instagram</span><i class="fa-brands fa-instagram"></i></li>
+                            <li><span class="hidden">Github</span><i class="fa-brands fa-github"></i></li>
+                            <li><span class="hidden">LinkedIn</span><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li><span class="hidden">Tumblr</span><i class="fa-brands fa-tumblr"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h5>Actions</h5>
+                <!-- Links que se parecem com botões -->
+                <div class="row">
+                    <div class="col-2 ">
+                        <p><a href="#" class="button-default">Default</a>
+                            <a href="#" class="button-default button-default-stroke">Default</a>
+                         </p>
+         
+                        <p><a href="#" class="button-default button-default-small">Default</a>
+                            <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-2 ">
+                        <p><a href="#" class="button-default button-default-full">Default</a>
+                            <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+                        </p>
+        
+                        <p><a href="#" class="button-default button-default-full button-default-small">Default</a>
+                            <a href="#" class="button-default button-default-full button-default-small button-default-stroke">Default</a>
+                        </p>
+
+                    </div>
+                </div>
+
+                <h4>Table</h4>
+                <h5>Default</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+    
+                    <tfoot>
+                        <tr>
+                            <!-- Célula vazia para ocupar as 2 primeiras colunas -->
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                    </tfoot>
+    
+                    <tbody>
+                        <tr>
+                            <td>Item One</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Two</td>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Three</td>
+                            <td>Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Five</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>Alternate</h5>
+                <table class="table table-alternate">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+    
+                    <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
+                        </tr>
+                    </tfoot>
+    
+                    <tbody>
+                        <tr>
+                            <td>Item One</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Two</td>
+                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                            <td>19.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Three</td>
+                            <td>Morbi faucibus arcu accumsan lorem.</td>
+                            <td>29.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Four</td>
+                            <td>Vitae integer tempus condimentum.</td>
+                            <td>19.99</td>
+                        </tr>
+    
+                        <tr>
+                            <td>Item Five</td>
+                            <td>Ante turpis integer aliquet porttitor.</td>
+                            <td>29.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h5>Buttons</h5>
+                <!-- Aqui são botões de verdade -->
+                
+                <p><button class="button-default">Default</button>
+                   <button class="button-default button-default-stroke">Default</button>
+                </p>
+
+                <p><button class="button-default button-default-small">Default</button>
+                    <button class="button-default button-default-small button-default-stroke">Default</button>
+                </p>
+
+                <p><button class="button-default button-default-full">Default</button>
+                    <button class="button-default button-default-full button-default-stroke">Default</button>
+                </p>
+
+                <p><button class="button-default button-default-full button-default-small">Default</button>
+                    <button class="button-default button-default-full button-default-small button-default-stroke">Default</button>
+                </p>
+
+                <input type="submit" value="Send" class="button-default">
+
+                <h5>Form</h5>
+                <form action="#" method="POST">
+                    <label for="txtName">Name</label>
+                    <input type="text" name="name" id="txtName" placeholder="Full name">
+
+                    <label for="txtEmail">Email</label>
+                    <input type="email" name="email" id="txtEmail">
+
+                    <select name="status">
+                        <option value="0">- Category -</option>
+                        <option value="M">Manufacturing</option>
+                        <option value="S">Shipping</option>
+                        <option value="A">Administration</option>
+                        <option value="HR">Human Resources</option>
+                    </select>
+
+                    <label>
+                        <input type="radio" name="priority" value="L">
+                        Low Priority
+                    </label>
+
+                    <label>
+                        <input type="radio" name="priority" value="N">
+                        Normal Priority
+                    </label>
+
+                    <label>
+                        <input type="radio" name="priority" value="H">
+                        High Priority
+                    </label>
+
+                    <label><input type="checkbox" name="copy" value="1">Email me a copy of this message</label>
+                    <label><input type="checkbox" name="human" value="2">I am a human and not a robot</label>
+
+                    <label for="txtMessage">Message</label>
+                    <textarea name="message" id="txtMessage" placeholder="Enter your message"></textarea>
+
+                    <!-- Os dois botões ficam com larguras diferentes devido ao conteúdo dentro (a largura depende do conteúdo) -->
+                    <input type="submit" value="Send Message" class="button-default">
+                    <input type="reset" value="Reset" class="button-default button-default-stroke">
+
+                </form>
+
+            </section>
+
+            <section class="main-content-section">
+                <h3>Images</h3>
+                <h4>Fit</h4>
+
+                <div class="gallery-img">
+                    <img src="imagens/fulls/01.jpg" alt="Car on a quiet street">
+                </div>
+
+                <div class="gallery-thumb row">
+                    <img class="col-1-3" src="imagens/thumbs/01.jpg" alt="Car on a quiet street">
+                    <img class="col-1-3" src="imagens/thumbs/02.jpg" alt="Forest and sun">
+                    <img class="col-1-3" src="imagens/thumbs/03.jpg" alt="Library with a lot of books">
+                    <img class="col-1-3" src="imagens/thumbs/04.jpg" alt="Someone going up the stairs">
+                    <img class="col-1-3" src="imagens/thumbs/05.jpg" alt="Mountain">
+                    <img class="col-1-3" src="imagens/thumbs/06.jpg" alt="House in the middle of the forest">
+                    <img class="col-1-3" src="imagens/thumbs/03.jpg" alt="Library with a lot of books">
+                    <img class="col-1-3" src="imagens/thumbs/02.jpg" alt="Forest and sun">
+                    <img class="col-1-3" src="imagens/thumbs/01.jpg" alt="Car on a quiet street">
+                </div>
+
+                <h4>Left & Right</h4>
+                <p>
+                    <img src="imagens/avatar.jpg" class="img-left" alt="Man facing backwards">
+                    Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
+                    tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit 
+                    adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer 
+                    ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum 
+                    ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat 
+                    ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan 
+                    interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis 
+                    in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu 
+                    faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum 
+                    ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing 
+                    accumsan eu faucibus. Integer ac pellentesque praesent.
+                </p>
+
+                <p>
+                    <img src="imagens/avatar.jpg" class="img-right" alt="Man facing backwards">
+                    Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
+                    tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit 
+                    adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer 
+                    ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum 
+                    ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat 
+                    ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan 
+                    interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis 
+                    in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu 
+                    faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum 
+                    ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing 
+                    accumsan eu faucibus. Integer ac pellentesque praesent.
+                </p>
+
+            </section>
+
+        </main>
+
+        <footer class="main-footer">
+
+            <ul class="ul-icons">
+                <li><a href="#" class="icon-link"><span class="hidden">Twiiter</span><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" class="icon-link"><span class="hidden">Github</span><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#" class="icon-link"><span class="hidden">LinkedIn</span><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="icon-link"><span class="hidden">Email</span><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+                <li>&copy; Untitled</li>
+                <li>|</li>
+                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+
+        </footer>
+
+    </body>
+</html>
